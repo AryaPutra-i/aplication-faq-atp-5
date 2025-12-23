@@ -1,20 +1,22 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: content-box;
+
   }
   
   body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Arial", sans-serif;
     background: url("https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages-1520x800.png");
     color: white;
+    font-display: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
   
   section {
-    width: 80%;
+    width: 100%;
     margin: 0 -100px;
     display: flex;
     flex-direction: column;
@@ -24,17 +26,18 @@
   
   .title {
     font-size: 40px;
-    margin: 40px 0;
-    color: rgb(255, 103, 235);
+    margin: 30px 0;
+    color: gold;
   }
   
   .faq {
-    max-width: 700px;
+    max-width: 1000px;
     margin-top: 20px;
     padding: 20px;
-    border: 2px solid greenyellow;
+    border: 1.5px solid whitesmoke;
     cursor: pointer;
     border-radius: 15px;
+    backdrop-filter: blur(8.5px);
   }
   
   .question {
@@ -45,33 +48,43 @@
   
   h3 {
     font-size: 25px;
-    color: rgb(255, 191, 191);
+    color: palegreen;
+    font-style: oblique;
   }
   
   .answer {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1.4s ease;
-    color: rgb(191, 253, 233);
+    transition: max-height 0.8s ease-in;
+    transition: padding 0.8s ease-in;
+    transition: line-height 0.8s ease-out;
+    color: whitesmoke;
+    
   }
   
   .answer p {
     padding-top: 20px;
-    line-height: 1.6;
-    font-size: 20px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: lighter;
   }
   
   .faq.active .answer {
     max-height: 300px;
-    animation: fade 1s ease-in-out;
+    animation: fade 0.8s ease;
   }
   
   .faq.active i {
     transform: rotate(180deg);
+    background-clip: border-box;
   }
   
   i {
+<<<<<<< HEAD
     transition: transform 0.2s ease-in;
+=======
+    transition: transform 0.5s ease;
+>>>>>>> 49896b9e7e44ef69e3fba68325d736131affc14f
     color: yellow;
   }
   
