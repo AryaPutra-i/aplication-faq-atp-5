@@ -6,11 +6,12 @@
   }
   
   body {
+    width: 100vw;
     font-family: "Arial", sans-serif;
-    background: url("https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages-1520x800.png");
+    background-image: url("https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages-1520x800.png");
     color: white;
     font-display: auto;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-size: cover;
     background-attachment: fixed;
   }
